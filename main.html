@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Modern</title>
+    <!-- Tailwind CSS CDN dengan konfigurasi Dark Mode -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-5">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- Brand -->
+            <div class="text-2xl font-bold tracking-tighter text-blue-600 dark:text-blue-500 cursor-pointer shrink-0"
+                onclick="scrollToSection('home')">
+                <span id="nav-brand-first">NAMA</span><span id="nav-brand-last"
+                    class="text-slate-900 dark:text-slate-100">ANDA</span>
+            </div>
+
+            <!-- Right Side Menu -->
+            <div class="flex items-center gap-4">
+                <!-- Theme Toggle Button -->
+                <button onclick="toggleTheme()"
+                    class="p-2 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:scale-110 transition-all">
+                    <i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i>
+                </button>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div id="desktop-menu" class="flex items-center space-x-8">
+                        <!-- Nav items injected here -->
+                    </div>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="md:hidden text-slate-800 dark:text-slate-100 p-2" onclick="toggleMenu()">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 py-6 px-6 flex flex-col space-y-4 shadow-xl">
+            <!-- Mobile nav items injected here -->
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="pt-32 pb-20 md:pt-48 md:pb-32 px-6">
+        <div class="container mx-auto">
+            <div class="max-w-3xl">
+                <div
+                    class="inline-flex items-center space-x-2 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+                    <span>Tersedia untuk Proyek Baru</span>
+                </div>
+                <h1
+                    class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
+                    Membangun Pengalaman Digital yang <span class="text-gradient">Luar Biasa.</span>
+                </h1>
+                <p id="hero-role" class="text-xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed max-w-2xl">
+                    Halo! Saya adalah pengembang web yang berfokus pada pembuatan aplikasi yang cepat dan estetik.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 items-center">
+                    <button onclick="scrollToSection('projects')"
+                        class="w-full sm:w-auto bg-slate-900 dark:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-slate-800 dark:hover:bg-blue-700 transition-all shadow-lg group">
+                        Lihat Portofolio
+                        <i data-lucide="chevron-right"
+                            class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                    <div class="flex items-center gap-4 px-2" id="hero-socials">
+                        <!-- Socials injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 bg-white dark:bg-slate-900 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="w-full md:w-1/2 relative">
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl relative z-10">
+                        <img id="about-img" src="" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600 rounded-2xl -z-0 hidden md:block">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2
+                        class="text-sm font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-3 flex items-center gap-2">
+                        <i data-lucide="user" class="w-4 h-4"></i> Tentang Saya
+                    </h2>
+                    <h3 id="about-title" class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6">
+                    </h3>
+                    <p id="about-desc1" class="text-lg text-slate-600 dark:text-slate-400 mb-6 leading-relaxed"></p>
+                    <p id="about-desc2" class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed"></p>
+                    <div class="grid grid-cols-2 gap-6" id="about-stats">
+                        <!-- Stats injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-24 px-6 bg-slate-50 dark:bg-slate-950">
+        <div class="container mx-auto text-center">
+            <h2 class="text-sm font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-3">Keahlian</h2>
+            <h3 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-16">Teknologi yang Saya Gunakan
+            </h3>
+            <div class="grid md:grid-cols-3 gap-8 text-left" id="skills-container">
+                <!-- Skills injected here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-24 px-6 bg-white dark:bg-slate-900">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <h2
+                        class="text-sm font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-3 flex items-center gap-2">
+                        <i data-lucide="briefcase" class="w-4 h-4"></i> Portofolio
+                    </h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Karya Terbaru</h3>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-container">
+                <!-- Projects injected here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ASSIGNMENT SECTION -->
+    <section id="assignment" class="py-24 px-6 bg-slate-50 dark:bg-slate-950">
+        <div class="container mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 relative">
+                <h2
+                    class="text-sm font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest mb-3 flex items-center justify-center gap-2">
+                    <i data-lucide="file-text" class="w-4 h-4"></i> Log Aktivitas
+                </h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Assignment & Riwayat
+                    Belajar</h3>
+                <!-- Tombol Download Semua -->
+                <a href="./Semua_Penugasan.zip" download
+                    class="mt-6 inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full font-bold hover:shadow-lg hover:scale-105 transition-all shadow-md">
+                    <i data-lucide="download-cloud" class="w-5 h-5"></i> Download Semua Assignment
+                </a>
+            </div>
+            <div class="grid gap-10 max-w-5xl mx-auto" id="assignments-container">
+                <!-- Assignments injected here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 px-6 bg-slate-900 dark:bg-slate-950 text-white">
+        <div class="container mx-auto text-center md:text-left">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="text-sm font-bold text-blue-400 uppercase tracking-widest mb-3">Kontak</h2>
+                    <h3 class="text-4xl font-bold mb-6">Mari kita diskusikan ide besar Anda.</h3>
+                    <div class="space-y-6 mt-10" id="contact-info">
+                        <!-- Contact info injected here -->
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 shadow-2xl text-slate-900 dark:text-white">
+                    <form class="space-y-6" onsubmit="event.preventDefault()">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-2 text-left">
+                                <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Nama Lengkap</label>
+                                <input id="contact-name" type="text" placeholder="John Doe" required
+                                    class="w-full bg-slate-50 dark:bg-slate-800 border-none focus:ring-4 focus:ring-blue-100 dark:focus:ring-blue-900/30 rounded-xl px-4 py-3 outline-none transition-all dark:text-white">
+                            </div>
+                            <div class="space-y-2 text-left">
+                                <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Email</label>
+                                <input id="contact-email" type="email" placeholder="john@example.com" required
+                                    class="w-full bg-slate-50 dark:bg-slate-800 border-none focus:ring-4 focus:ring-blue-100 dark:focus:ring-blue-900/30 rounded-xl px-4 py-3 outline-none transition-all dark:text-white">
+                            </div>
+                        </div>
+                        <div class="space-y-2 text-left">
+                            <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Pesan</label>
+                            <textarea id="contact-message" rows="4" placeholder="Halo, saya ingin bertanya tentang..."
+                                required
+                                class="w-full bg-slate-50 dark:bg-slate-800 border-none focus:ring-4 focus:ring-blue-100 dark:focus:ring-blue-900/30 rounded-xl px-4 py-3 outline-none transition-all resize-none dark:text-white"></textarea>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <button type="button" onclick="sendMessageWA()"
+                                class="w-full bg-green-600 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-green-700 transition-all shadow-lg active:scale-95">
+                                Kirim ke WA <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            </button>
+                            <button type="button" onclick="sendMessageEmail()"
+                                class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-blue-700 transition-all shadow-lg active:scale-95">
+                                Kirim ke Email <i data-lucide="mail" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+    <!-- FOOTER -->
+    <footer class="py-12 bg-slate-900 dark:bg-black border-t border-white/5 px-6">
+        <div class="container mx-auto text-center">
+            <div id="footer-brand" class="text-2xl font-bold tracking-tighter text-blue-400 mb-6"></div>
+            <div class="flex justify-center gap-6 mb-8" id="footer-socials"></div>
+            <div id="copyright" class="text-sm text-slate-600 pt-8 border-t border-white/5"></div>
+        </div>
+    </footer>
+</body>
+
+</html>
