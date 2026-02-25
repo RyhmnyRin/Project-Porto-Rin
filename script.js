@@ -53,36 +53,36 @@ const DATA_CONFIG = {
     assignments: [
         {
             title: "Penugasan 2",
-            subject: "Web Fundamental (HTML & CSS)",
+            subject: "Penugasan Kegiatan",
             status: "Selesai",
-            date: "10 Feb 2026",
-            desc: "Tujuan: Memahami struktur HTML5 dan CSS3 Modern.\nHasil: Halaman profil web statis dasar yang responsif.",
+            date: "25 Feb 2026",
+            desc: "Tujuan: memahami alur pembuatan tor dan menyelesaikan studi kasus.",
             type: "pdf", // 'pdf', 'video', atau 'image'
             previewImg: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600",
-            fileUrl: "./penugasan_2.pdf", // Ganti dengan link GDrive atau file lokal (.pdf)
-            fileName: "Penugasan_2.pdf"
+            fileUrl: "./TOR-LKMMTH.pdf", // Ganti dengan link GDrive atau file lokal (.pdf)
+            fileName: "TOR-LKMMTH.pdf"
         },
         {
             title: "Penugasan 3",
-            subject: "Javascript & DOM",
-            status: "Selesai",
-            date: "17 Feb 2026",
-            desc: "Tujuan: Menerapkan interaktivitas logika menggunakan Javascript.\nHasil: Web dengan form dinamis dan manipulasi DOM.",
-            type: "video",
+            subject: "Infografis Informatif",
+            status: "Belum Selesai",
+            date: "-",
+            desc: "Tujuan: -",
+            type: "png",
             previewImg: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=600",
             fileUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Ganti dengan link video YouTube/MP4/GDrive
             fileName: "Demo_Penugasan_3.mp4"
         },
         {
             title: "Penugasan 4",
-            subject: "Framework Frontend",
-            status: "Selesai",
-            date: "24 Feb 2026",
-            desc: "Tujuan: Mengintegrasikan framework CSS dan JS modern.\nHasil: Website portofolio utuh yang siap deploy.",
-            type: "image",
+            subject: "Video Kreatif",
+            status: "belum selesai",
+            date: "-",
+            desc: "Tujuan: -",
+            type: "video",
             previewImg: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600",
-            fileUrl: "./hasil_penugasan_4.png", // Ganti dengan gambar lokal png/jpg
-            fileName: "Hasil_Penugasan_4.png"
+            fileUrl: "./hasil_penugasan_4.mp4", // Ganti dengan gambar lokal png/jpg
+            fileName: "Hasil_Penugasan_4.mp4"
         }
     ]
 };
