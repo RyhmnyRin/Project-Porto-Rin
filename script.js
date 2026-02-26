@@ -36,19 +36,19 @@ const DATA_CONFIG = {
     ],
     projects: [
         {
-            title: "Modern E-Commerce",
-            desc: "Toko online dengan sistem keranjang belanja dan pembayaran real-time.",
-            tech: ["Next.js", "Stripe"],
-            img: "https://images.unsplash.com/photo-1557821552-17105176677c?w=600",
-            url: "#"
+            title: "Latihan Game Development \"Slain the Slime\"",
+            desc: "Belaljar membuat asset dan mechanic game, juga logic game dengan output sebuah prototype game 2d platformer side scroller.",
+            tech: ["Aseprite", "Godot Engine"],
+            img: "",
+            url: ""
         },
-        {
-            title: "SaaS Dashboard",
-            desc: "Panel manajemen data untuk perusahaan skala menengah.",
-            tech: ["React", "Charts.js"],
-            img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600",
-            url: "#"
-        }
+        // {
+        //     title: "SaaS Dashboard",
+        //     desc: "Panel manajemen data untuk perusahaan skala menengah.",
+        //     tech: ["React", "Charts.js"],
+        //     img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600",
+        //     url: "#"
+        // }
     ],
     assignments: [
         {
@@ -76,13 +76,13 @@ const DATA_CONFIG = {
         {
             title: "Penugasan 4",
             subject: "Video Kreatif",
-            status: "belum selesai",
-            date: "-",
-            desc: "Tujuan: -",
+            status: "Selesai",
+            date: "26 Feb 2026",
+            desc: "Tujuan: Problem solving dengan membuat video kreatif yang menyampaikan pesan tertentu.",
             type: "video",
             previewImg: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600",
-            fileUrl: "./hasil_penugasan_4.mp4", // Ganti dengan gambar lokal png/jpg
-            fileName: "Hasil_Penugasan_4.mp4"
+            fileUrl: "./https://drive.google.com/drive/u/2/folders/1N2E9HuyzZ1y0c4ragfeuQYpuRwfdV8cs", // Ganti dengan gambar lokal png/jpg
+            fileName: "PENUGASAN_4.mp4"
         }
     ]
 };
