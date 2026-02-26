@@ -8,13 +8,13 @@ const DATA_CONFIG = {
         location: "Bandung, Indonesia",
         email: "muhammad.salman.tif425@polban.ac.id",
         phone: "6281214958617",
-        aboutTitle: "Menciptakan solusi digital yang bermakna.",
-        aboutDesc1: "Saya adalah seorang pengembang yang bersemangat dalam menggabungkan estetika desain dengan performa kode yang optimal.",
-        aboutDesc2: "Dengan pengalaman lebih dari 3 tahun, saya telah membantu berbagai klien membangun identitas digital mereka melalui website yang responsif.",
-        image: "./IMG_20260225_204241_884.jpg.jpeg",
+        aboutTitle: "Lebih Baik dari Hari Kemarin.",
+        aboutDesc1: "Saya adalah mahasiswa Teknik Informatika di Politeknik Negeri Bandung.",
+        aboutDesc2: "Memiliki pengalaman dalam membuaat asset game pixel dan pemprograman dasar.",
+        image: "./pfp.jpeg",
         stats: [
-            { label: "Proyek Selesai", value: "25+" },
-            { label: "Klien Puas", value: "18" }
+            { label: "Proyek Selesai", value: "1+" },
+            { label: "Klien Puas", value: "1" }
         ]
     },
     socials: [
