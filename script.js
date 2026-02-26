@@ -39,7 +39,7 @@ const DATA_CONFIG = {
             title: "Latihan Game Development \"Slain the Slime\"",
             desc: "Belaljar membuat asset dan mechanic game, juga logic game dengan output sebuah prototype game 2d platformer side scroller.",
             tech: ["Aseprite", "Godot Engine"],
-            img: "",
+            img: "./bg_layer2_scenery.png",
             url: ""
         },
         // {
